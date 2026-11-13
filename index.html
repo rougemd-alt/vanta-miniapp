@@ -17,7 +17,7 @@
             padding: 0;
             box-sizing: border-box;
         }
-
+        
         body {
             min-height: 100vh;
             width: 100%;
@@ -28,11 +28,12 @@
             font-family: Arial, sans-serif;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
-            padding: 24px 18px;
+            padding: 40px 18px;
+            gap: 22px;
         }
-
+        
         .container {
             width: 100%;
             max-width: 440px;
@@ -45,7 +46,7 @@
                 0 20px 70px #00000080,
                 0 0 45px #7950d81a;
         }
-
+        
         .logo {
             font-size: 36px;
             font-weight: 800;
@@ -54,14 +55,12 @@
             color: #ffffff;
             margin-bottom: 10px;
         }
-
         .subtitle {
             color: #92899f;
             font-size: 11px;
             letter-spacing: 3px;
             margin-bottom: 38px;
         }
-
         .wallet-icon {
             width: 82px;
             height: 82px;
@@ -76,20 +75,20 @@
             font-size: 39px;
             box-shadow: 0 0 35px #7950d825;
         }
-
+        
         h1 {
             font-size: 23px;
             font-weight: 700;
             margin-bottom: 13px;
         }
-
+        
         .description {
             color: #96909f;
             font-size: 14px;
             line-height: 1.65;
             margin-bottom: 29px;
         }
-
+        
         .connect-button {
             width: 100%;
             min-height: 56px;
@@ -103,47 +102,88 @@
             box-shadow: 0 8px 25px #7950d840;
             transition: transform 0.2s, box-shadow 0.2s;
         }
-
+        
         .connect-button:hover {
             transform: translateY(-2px);
             box-shadow: 0 12px 30px #7950d860;
         }
-
+        
         .connect-button:active {
             transform: scale(0.98);
         }
-
+        
         .security-note {
             margin-top: 22px;
             color: #777080;
             font-size: 11px;
             line-height: 1.6;
         }
-
+        
         .footer {
             margin-top: 35px;
             color: #625b6d;
             font-size: 10px;
             letter-spacing: 2px;
         }
-
+        
+        .about-section {
+            width: 100%;
+            max-width: 440px;
+            padding: 30px 25px;
+            background: linear-gradient(145deg, #171320, #100e16);
+            border: 1px solid #30243e;
+            border-radius: 26px;
+            box-shadow: 0 15px 45px #00000050;
+        }
+        .about-label {
+            color: #b58aff;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            margin-bottom: 16px;
+        }
+        .about-section h2 {
+            color: #ffffff;
+            font-size: 21px;
+            margin-bottom: 20px;
+        }
+        .about-section p {
+            color: #a49cac;
+            font-size: 13px;
+            line-height: 1.8;
+            margin-bottom: 16px;
+        }
+        .about-signature {
+            color: #b58aff;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            line-height: 1.6;
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 1px solid #30243e;
+        }
         #root {
             display: none;
         }
-
         @media (max-width: 380px) {
             .container {
                 padding: 29px 19px;
             }
-
+            
             .logo {
                 font-size: 31px;
             }
-
+            
             h1 {
                 font-size: 21px;
             }
+            
+            .about-section {
+                padding: 25px 19px;
+            }
         }
+
     </style>
 </head>
 
