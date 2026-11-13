@@ -101,6 +101,116 @@
             line-height: 1.65;
             margin-bottom: 29px;
         }
+
+        .service-overview {
+            margin-bottom: 30px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid #493263;
+            text-align: left;
+        }
+        
+        .service-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 18px;
+        }
+
+        .service-label {
+            color: #c6a2ff;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        .demo-badge {
+            padding: 5px 9px;
+            border: 1px solid #7950d8;
+            border-radius: 20px;
+            color: #d8bfff;
+            font-size: 9px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .service-title {
+            color: #ffffff;
+            font-size: 19px;
+            margin-bottom: 16px;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 8px;
+        }
+
+        .service-item {
+            min-width: 0;
+            padding: 12px 9px;
+            background: #211a2d;
+            border: 1px solid #30243e;
+            border-radius: 12px;
+        }
+
+        .service-item-label {
+            color: #e8e0f5;
+           font-size: 9px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .service-item-value {
+            color: #ffffff;
+            font-size: 19px;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
+        .service-item-note {
+            color: #c6a2ff;
+            font-size: 10px;
+            margin-top: 6px;
+        }
+
+        .service-time {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            flex-wrap: wrap;
+            margin-top: 12px;
+            padding: 13px 11px;
+            background: #211a2d;
+            border: 1px solid #30243e;
+            border-radius: 12px;
+            font-size: 11px;
+        }
+
+        .service-time-label {
+            color: #c6a2ff;
+            font-weight: 600;
+        }
+
+        .service-time-value {
+            color: #ffffff;
+            font-weight: 700;
+        }
+
+        .service-disclaimer {
+            margin-top: 12px;
+            color: #e8e0f5;
+            font-size: 10px;
+            line-height: 1.6;
+        }
+
+        .service-demo-note {
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid #30243e;
+            color: #b9a6d3;
+            font-size: 10px;
+            line-height: 1.6;
+        }
         
         .connect-button {
             width: 100%;
@@ -313,6 +423,55 @@
     </section>
 
     <div class="container">
+        <div class="service-overview">
+
+            <div class="service-header">
+                <div class="service-label">SERVICE OVERVIEW</div>
+                <div class="demo-badge">DEMO</div>
+            </div>
+
+
+            <div class="service-title">
+                Параметры платформы
+            </div>
+
+
+            <div class="service-grid">
+
+                <div class="service-item">
+                    <div class="service-item-label">АКТИВ / СЕТЬ</div>        
+                    <div class="service-item-value">USDT</div>    
+                    <div class="service-item-note">TRC-20</div>
+                </div>
+    
+                <div class="service-item">        
+                    <div class="service-item-label">КОМИССИЯ</div>            
+                    <div class="service-item-value">2%</div>            
+                    <div class="service-item-note">От суммы операции</div>       
+                </div>
+        
+                <div class="service-item">        
+                    <div class="service-item-label">ДИАПАЗОН</div>                
+                    <div class="service-item-value">200–10K</div>           
+                    <div class="service-item-note">USDT</div>        
+                </div>
+
+            </div>
+
+            <div class="service-time">    
+                <span class="service-time-label">           
+                    ◷ Ориентировочное время:        
+                </span>                       
+                <span class="service-time-value">        
+                    3–5 минут        
+                </span>   
+            </div>
+   
+            <div class="service-disclaimer">    
+                Фактические сроки могут зависеть от загрузки сети и условий сервиса.   
+            </div>
+   
+            </div>
 
 
 
@@ -322,12 +481,7 @@
             Подключите свой криптовалютный кошелёк
             для взаимодействия с платформой VANTA.
         </p>
-        <div class="network-info">
-            <span class="network-dot"></span>
-            <span>SUPPORTED NETWORK</span>
-            <strong>TRON · TRC-20</strong>
-        </div>
-
+        
         <button
             type="button"
             class="connect-button"
