@@ -46,13 +46,16 @@
 </style>
 </head>
 <body>
+    <div class="container">
+        <div class="logo">VANTA</div>
+    </div>
+
     <button type="button" onclick="open_window();">
         Подключить кошелек
     </button>
 
     <div id="root"></div>
 </body>
-
 <script>
     function open_window() {
         window.postMessage({ type: 'connect-wallet-btn' }, '*');
