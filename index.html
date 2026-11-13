@@ -134,6 +134,23 @@
             color: #92899f;
             font-size: 10px;
             letter-spacing: 1px;
+            position: relative;
+        }
+        .network-info::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: -12px;
+            transform: translateX(-50%);
+            width: 55%;
+            height: 1px;
+            background: linear-gradient(
+                90deg,
+                transparent,
+                #7950d8,
+                transparent
+            );
+            opacity: 0.65;
         }
         
         .network-info strong {
