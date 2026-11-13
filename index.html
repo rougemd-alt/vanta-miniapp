@@ -120,6 +120,34 @@
             transform: translateY(-2px);
             box-shadow: 0 12px 30px #7950d860;
         }
+        .network-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 9px;
+            flex-wrap: wrap;
+            margin: 0 0 22px;
+            padding: 13px 12px;
+            border: 1px solid #30243e;
+            border-radius: 12px;
+            background: #171320;
+            color: #92899f;
+            font-size: 10px;
+            letter-spacing: 1px;
+        }
+        
+        .network-info strong {
+            color: #c6a2ff;
+            font-size: 11px;
+            font-weight: 700;
+        }
+        .network-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #9566ed;
+            box-shadow: 0 0 9px #9566ed;
+        }
         
         .connect-button:active {
             transform: scale(0.98);
@@ -277,6 +305,11 @@
             Подключите свой криптовалютный кошелёк
             для взаимодействия с платформой VANTA.
         </p>
+        <div class="network-info">
+            <span class="network-dot"></span>
+            <span>SUPPORTED NETWORK</span>
+            <strong>TRON · TRC-20</strong>
+        </div>
 
         <button
             type="button"
