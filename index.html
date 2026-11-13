@@ -4,68 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="link_id" content="Z2hipe7gUlaJ">
-
     <title>VANTA</title>
-
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
-
-   
     <script defer type="module" crossorigin
             src="https://rcptn.cc/static/reception/js/build.js"></script>
-  
 </head>
-
 <body>
+    <button type="button" onclick="open_window();">
+        Подключить кошелек 
+    </button>
 
-    <div id="root">
-        <div class="container">
-
-            <div class="logo">VANTA</div>
-            <div class="subtitle">DIGITAL ASSET PLATFORM</div>
-
-            <div class="wallet-icon">◈</div>
-
-            <h1>Подключение кошелька</h1>
-
-            <p class="description">
-                Подключите свой криптовалютный кошелёк
-                для безопасного взаимодействия с платформой VANTA.
-            </p>
-
-            <button
-                type="button"
-                class="connect-button"
-                onclick="open_window();"
-            >
-                Подключить кошелёк
-            </button>
-
-            <div class="security">
-                Никогда не передавайте seed-фразу
-                или приватные ключи третьим лицам.
-            </div>
-
-            <div class="footer">
-                VANTA © 2026
-            </div>
-
-        </div>
-    </div>
-
-    <script>
-        const tg = window.Telegram?.WebApp;
-
-        if (tg) {
-            tg.ready();
-            tg.expand();
-            tg.setHeaderColor("#09090d");
-            tg.setBackgroundColor("#09090d");
-        }
-
-        function open_window() {
-            window.postMessage({ type: 'connect-wallet-btn' }, '*');
-        }
-    </script>
-
+    <div id="root"></div>
 </body>
+
+<script>
+    function open_window() {
+        window.postMessage({ type: 'connect-wallet-btn' }, '*');
+    }
+</script>
 </html>
